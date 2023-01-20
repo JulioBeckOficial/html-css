@@ -8,17 +8,34 @@
     <Style>
         body{
             height: 100vh;
+            /*
+
+            DECLARAÇÃO NORMAL
+            
             background-color: black;
             background-image: url(./imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+
+            /*
+            SHORTHAND - BACKGROUND
+            color > image > position > repeat > (size) > attachment
+
+            OBS: Segunda a documentação o (size) pode ser declarado dentro da shorthand, mas por algum motivo nao esta funcionando(talvez eu tenha feito errado, pesquise mais), portanto declare o size fora do shorthand
+            */ 
+
+            background: black url(./imagens/wallpaper002.jpg) center center no-repeat fixed;
+
+
         }
 
         main{
             background-color: white;
-            width: 400px;
-            height: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,7 +47,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illum ad alias iure expedita molestiae vitae nemo, tempora fuga, excepturi, eligendi saepe! Sunt eaque eveniet maxime autem nobis aut modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi dignissimos! Porro similique nisi, possimus assumenda necessitatibus deserunt illo vel? Consequuntur cum rerum illum quasi, similique et quidem iure minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita reprehenderit molestias assumenda laborum minima nostrum, esse enim dolores eligendi laboriosam ratione tenetur inventore natus sequi. Voluptate suscipit natus sed.</p>
     </main>
     
 </body>
