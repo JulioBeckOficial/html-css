@@ -10,9 +10,18 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -26,18 +35,21 @@
 
         }
 
-        thead{
+        thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1;
+            background-color: rgb(57, 55, 55);
         }
 
         tbody > tr:nth-child(2n){
             background-color: gray ;
         }
-        tfoot{
-            background-color: gray;
-            color: white;
-        }
+        
     </style>
 </head>
 <body>
